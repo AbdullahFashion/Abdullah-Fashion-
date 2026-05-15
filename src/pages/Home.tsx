@@ -142,4 +142,29 @@ const Home = () => {
                         {product.name}
                       </h3>
                     </Link>
-                    <p
+                    <p className="text-gold font-medium mt-2 text-lg">
+  {product.price}
+</p>
+</div>
+</div>
+))}
+</div>
+
+{/* Mobile View All Button */}
+<div className="mt-10 text-center md:hidden">
+  <Link
+    to="/products"
+    className="inline-block px-8 py-3 border border-gold text-gold rounded hover:bg-gold hover:text-primary transition-all duration-300"
+  >
+    View All Products
+  </Link>
+</div>
+</div>
+</section>
+
+</div>
+</>
+)
+}
+
+export default Home
